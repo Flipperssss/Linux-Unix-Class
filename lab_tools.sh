@@ -9,7 +9,11 @@ show_user() {
     echo "Hostname: $HOSTNAME"
 }
 
-# Test functions
-show_date
-show_user
+main() {
+    show_date
+    show_user
+}
+
+# Run main automatically
+main
 
