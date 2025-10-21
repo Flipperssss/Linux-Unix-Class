@@ -1,6 +1,4 @@
 #!/bin/bash
-# Script: countdown.sh
-# Purpose: Perform a countdown from a given number
 
 read -p "Enter a positive number: " N
 
@@ -11,4 +9,11 @@ then
 fi
 
 echo "Starting countdown from $N..."
+
+while [ "$N" -gt 0 ]
+do
+    echo "$N"
+    N=$((N - 1))
+    sleep 1
+done
 
