@@ -2,9 +2,9 @@
 
 if [ $# -gt 0 ]
 then
-    echo "Welcome to the LINUX Research Lab, $1!"
+    echo "Welcome to the LINUX Research Lab, $*!"
 else
-    read -p "Enter your name: " name
+    read -p "Enter your full name: " name
     echo "Welcome to the LINUX Research Lab, $name!"
 fi
 
