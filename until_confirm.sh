@@ -5,5 +5,5 @@ do
     read -p "Type YES to proceed: " input
 done
 
-echo "Confirmation received."
+echo "Confirmation received. Proceeding..."
 
