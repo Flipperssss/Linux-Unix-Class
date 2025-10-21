@@ -1,8 +1,12 @@
 #!/bin/bash
-# Script: list_logs.sh
-# Purpose: List all .log files in logs/ directory
+
+count=0
 
 for logfile in logs/*.log
 do
     echo "$logfile"
+    count=$((count + 1))
 done
+
+echo "Total log files: $count"
+
