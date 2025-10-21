@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#note to fix 
 source ./lab_modules.sh
 
 # Call all four functions
