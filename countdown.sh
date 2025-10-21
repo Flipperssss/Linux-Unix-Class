@@ -17,3 +17,5 @@ do
     sleep 1
 done
 
+echo "Liftoff!"
+
