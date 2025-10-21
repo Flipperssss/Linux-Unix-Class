@@ -1,27 +1,34 @@
 #!/bin/bash
 
-echo "1) Show current date"
-echo "2) Show current directory"
-echo "3) Show logged-in users"
-echo "4) Exit"
+choice=0
 
-read -p "Enter your choice [1-4]: " choice
+while [ "$choice" -ne 4 ]
+do
+    echo "1) Show current date"
+    echo "2) Show current directory"
+    echo "3) Show logged-in users"
+    echo "4) Exit"
 
-case $choice in
-    1)
-        date
-        ;;
-    2)
-        pwd
-        ;;
-    3)
-        who
-        ;;
-    4)
-        echo "Exiting..."
-        ;;
-    *)
-        echo "Invalid choice"
-        ;;
-esac
+    read -p "Enter your choice [1-4]: " choice
+
+    case $choice in
+        1)
+            date
+            ;;
+        2)
+            pwd
+            ;;
+        3)
+            who
+            ;;
+        4)
+            echo "Exiting menu..."
+            ;;
+        *)
+            echo "Invalid choice"
+            ;;
+    esac
+
+    echo ""
+done
 
