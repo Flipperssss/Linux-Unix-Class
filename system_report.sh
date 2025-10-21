@@ -10,24 +10,30 @@ show_disk() {
     df -h
 }
 
-echo "1) Show system uptime"
-echo "2) Show disk usage"
-echo "3) Exit"
+choice=0
 
-read -p "Enter your choice [1-3]: " choice
-
-case $choice in
-    1)
-        show_uptime
-        ;;
-    2)
-        show_disk
-        ;;
-    3)
-        echo "Exiting..."
-        ;;
-    *)
-        echo "Invalid choice"
-        ;;
-esac
+while [ "$choice" -ne 3 ]
+do
+    echo ""
+    echo "1) Show system uptime"
+    echo "2) Show disk usage"
+    echo "3) Exit"
+    
+    read -p "Enter your choice [1-3]: " choice
+    
+    case $choice in
+        1)
+            show_uptime
+            ;;
+        2)
+            show_disk
+            ;;
+        3)
+            echo "System report closed."
+            ;;
+        *)
+            echo "Invalid choice"
+            ;;
+    esac
+done
 
